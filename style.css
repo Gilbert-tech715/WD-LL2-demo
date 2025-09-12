@@ -1,4 +1,181 @@
-html {
-  height: 100%;
-  width: 100%;
+/* Gold font for hero name */
+.gold-name {
+  color: #FFD700;
+}
+/* Light orange font color for welcome text in hero box */
+.hero-box p {
+  color: #FFA726;
+}
+/* Hero box styles */
+.hero-box {
+  background: #4e342e;          /* Dark brown background */
+  color: white;                /* White text for readability */
+  padding: 40px 20px;          /* Adds space inside the box */
+  margin: 40px auto;           /* Centers the box with margin */
+  max-width: 600px;            /* Limits the box width */
+  border-radius: 10px;         /* Rounded corners */
+  text-align: center;          /* Centers the text */
+}
+/* Minimal clean CSS starter */
+/* Create a diagonal paint splash effect using a gradient */
+body {
+  /* This uses a linear gradient to create a diagonal splash of turquoise, yellow, and black */
+  background-image: url('gyenyame kente.png');
+  background-size: cover;      /* Makes the image cover the whole page */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center;  /* Centers the image */
+  min-height: 100vh; /* Make sure the background covers the whole page */
+}
+/*
+  This is a simple way to create a splash effect for beginners.
+  For more advanced paint splash shapes, images or SVGs are needed.
+*/
+
+/* Navbar styles */
+nav {
+  background: rgba(0,0,0,0.7);
+  padding: 10px 0;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+nav ul li a:hover {
+  color: #1abc9c;
+}
+
+/* Hero section styles */
+#hero {
+  text-align: center;
+  padding: 40px 20px 20px 20px;
+}
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+#hero h1 {
+  font-size: 2.5em;
+  margin: 10px 0 5px 0;
+}
+#hero p {
+  font-size: 1.2em;
+}
+
+section {
+  background: #e0e0e0; /* Soft grey background */
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 700px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15); /* Hint of shadow for depth */
+}
+section h2 {
+  color: #3b2f2f; /* Brownish black */
+  margin-bottom: 10px;
+}
+
+/* Skills list styles */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+.skills-list li {
+  /* dark green background for skills buttons */
+    background: #014421; /* Deep green */
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 1em;
+}
+
+/* Projects section styles */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.project-card {
+  background: #4e342e; /* Dark brown background */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+  padding: 15px;
+  width: 220px;
+  text-align: center;
+}
+.project-card h3 {
+  color: #FFD700; /* Gold font color for project titles */
+  margin-bottom: 8px;
+}
+.project-card p {
+  color: #FFA726; /* Light orange font color for project descriptions */
+}
+
+/* Contact section styles */
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#contact input,
+#contact textarea {
+  padding: 10px;
+  border: 1px solid #1abc9c;
+  border-radius: 5px;
+  font-size: 1em;
+}
+#contact button {
+  background: #1abc9c;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+#contact button:hover {
+  background: #000;
+}
+
+/* Responsive styles */
+@media (max-width: 800px) {
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  section {
+    max-width: 95vw;
+  }
+}
+@media (max-width: 500px) {
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+  }
+  #hero h1 {
+    font-size: 1.5em;
+  }
 }
