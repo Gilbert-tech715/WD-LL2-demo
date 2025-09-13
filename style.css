@@ -1,3 +1,50 @@
+/* Projects section background */
+#projects {
+  background: #f5f5f5;
+  border-radius: 16px;
+  padding: 30px 0;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  margin-bottom: 30px;
+}
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px 0;
+}
+.project-card {
+  background: #4e342e; /* Dark brown background */
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  padding: 20px;
+  width: 240px;
+  text-align: center;
+  margin: 10px;
+}
+nav {
+  background: rgba(0,0,0,0.7);
+  padding: 10px 0;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+nav ul li a:hover {
+  color: #1abc9c;
+}
 /* Gold font for hero name */
 .gold-name {
   color: #FFD700;
@@ -33,28 +80,6 @@ body {
 
 /* Navbar styles */
 nav {
-  background: rgba(0,0,0,0.7);
-  padding: 10px 0;
-}
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-nav ul li {
-  margin: 0 15px;
-}
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
-}
-nav ul li a:hover {
-  color: #1abc9c;
-}
 
 /* Hero section styles */
 #hero {

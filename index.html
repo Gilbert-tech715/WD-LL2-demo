@@ -1,3 +1,4 @@
+  
 <!DOCTYPE html>
 <html>
 
@@ -6,78 +7,103 @@
   <meta name="viewport" content="width=device-width">
   <title>LiveLab 2 Demo</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="tailwind.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <!-- Navbar -->
-  <nav>
-    <ul>
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <nav class="bg-pink-200 shadow-md w-full">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="font-bold text-xl text-pink-800">Gilbert Clinton</div>
+      <ul class="flex space-x-6 text-pink-800 font-semibold">
+        <li><a href="#hero" class="hover:underline">Home</a></li>
+        <li><a href="#skills" class="hover:underline">Skills</a></li>
+        <li><a href="#projects" class="hover:underline">Projects</a></li>
+        <li><a href="#about" class="hover:underline">About</a></li>
+        <li><a href="#contact" class="hover:underline">Contact</a></li>
+      </ul>
+    </div>
   </nav>
-
-  <!-- Hero Section -->
-  <section id="hero">
-    <div class="hero-box">
-  <img src="mypicture.jpeg" alt="Profile Picture" class="profile-pic">
-      <h1 class="gold-name">Gilbert Clinton</h1>
-      <p>Welcome to my personal portfolio website!</p>
+  <!-- Hero Section (unchanged) -->
+  <section id="hero" class="flex flex-col items-center py-8">
+    <div class="hero-box mb-6">
+      <img src="mypicture.jpeg" alt="Profile Picture" class="profile-pic mx-auto mb-4" />
+      <h1 class="gold-name text-3xl font-bold mb-2">Gilbert Clinton</h1>
+      <p class="text-lg">Welcome to my personal portfolio website!</p>
     </div>
   </section>
 
-  <!-- About Me Section -->
-  <section id="about">
-  <h2>About Me</h2>
-  <p>My name is Gilbert Clinton. I am a 3rd year Electrical and Computer Engineering student and I love creating beautiful websites. Take your time and enjoy all I have to offer here.</p>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>JavaScript</li>
-  <li>C++</li>
-  <li>Soldering</li>
-  <li>CAD</li>
-  <li>Technical Writing</li>
-  <li>Teamwork</li>
-  <li>Problem Solving</li>
-    </ul>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-container">
-      <div class="project-card">
-        <h3>Project One</h3>
-        <p>A simple website built with HTML and CSS.</p>
+    <!-- About Me Section -->
+    <section id="about" class="max-w-4xl mx-auto py-8">
+  <div class="bg-pink-200 rounded-lg shadow p-6 min-h-[220px] flex flex-col justify-center items-center">
+        <h2 class="text-2xl font-bold mb-4 text-center">About Me</h2>
+        <p class="text-center">My name is Gilbert Clinton. I am a 3rd year Electrical and Computer Engineering student and I love creating beautiful websites. Take your time and enjoy all I have to offer here.</p>
       </div>
-      <div class="project-card">
-        <h3>Project Two</h3>
-        <p>A fun JavaScript game for beginners.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="max-w-6xl mx-auto py-8">
+  <h2 class="text-2xl font-bold mb-6 text-center bg-pink-400 text-white rounded-lg py-2 shadow">Projects</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <article class="w-full min-w-[16rem] rounded-2xl border p-6 bg-pink-200 shadow-sm flex flex-col items-center">
+          <h3 class="text-xl font-bold mb-4 text-center">Intel's Sustainability Timeline</h3>
+          <img src="intel.png" alt="Intel Logo" class="w-full h-auto max-h-40 mb-4 rounded shadow-lg object-contain" />
+          <p class="text-lg text-center font-semibold text-pink-600">Coming soon</p>
+        </article>
+        <article class="w-full min-w-[16rem] rounded-2xl border p-6 bg-pink-200 shadow-sm flex flex-col items-center">
+          <h3 class="text-xl font-bold mb-4 text-center">Water Game Concept</h3>
+          <img src="watergame.png" alt="Water Game" class="w-full h-auto max-h-40 mb-4 rounded shadow-lg object-contain" />
+          <p class="text-lg text-center font-semibold text-pink-600">Coming soon</p>
+        </article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
 
-  <script src="script.js"></script>
+    <!-- Skills Section -->
+    <section id="skills" class="max-w-6xl mx-auto py-8">
+  <h2 class="text-2xl font-bold mb-6 text-center bg-pink-400 text-white rounded-lg py-2 shadow">Skills</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <article class="w-full min-w-[16rem] rounded-2xl border p-6 bg-pink-200 shadow-sm flex flex-col items-center">
+          <h3 class="text-lg font-bold mb-2">Photography</h3>
+          <img src="camera.jpg" alt="Photography" class="w-full h-auto max-h-40 mb-4 rounded shadow-lg" />
+          <p>I love taking pictures and videos and posting on social media.</p>
+        </article>
+        <article class="w-full min-w-[16rem] rounded-2xl border p-6 bg-pink-200 shadow-sm flex flex-col items-center">
+          <h3 class="text-lg font-semibold mb-2">HTML & CSS</h3>
+          <img src="websiteimage.jpeg" alt="HTML & CSS" class="w-full h-auto max-h-40 mb-4 rounded shadow-lg" />
+          <p>Building clean and simple web pages.</p>
+        </article>
+        <article class="w-full min-w-[16rem] rounded-2xl border p-6 bg-pink-200 shadow-sm flex flex-col items-center">
+          <h3 class="text-lg font-bold mb-2">Java and C++</h3>
+          <img src="computer with code.webp" class="w-full h-auto max-h-40 mb-4 rounded shadow-lg" />
+          <p>Adding interactivity, dynamic features, and programming solutions.</p>
+        </article>
+        <article class="w-full min-w-[16rem] rounded-2xl border p-6 bg-pink-200 shadow-sm flex flex-col items-center">
+          <h3 class="text-lg font-bold mb-2">Soldering</h3>
+          <img src="soldingscreenshot.webp" alt="Soldering" class="w-full h-auto max-h-40 mb-4 rounded shadow-lg" />
+          <p>Working with electronics and circuit boards.</p>
+          <p class="text-sm text-gray-600 mt-2">Joining electrical component to circuitboard.</p>
+        </article>
+      </div>
+    </section>
+    <!-- Copyright -->
+    <!-- Contact Section -->
+    <section id="contact" class="max-w-4xl mx-auto py-8">
+      <h2 class="text-2xl font-bold mb-6 text-center bg-pink-400 text-white rounded-lg py-2 shadow">Contact</h2>
+      <div class="bg-pink-100 rounded-lg shadow p-6 flex flex-col items-center">
+        <div class="mb-4 flex items-center space-x-3">
+          <img src="outlookpicture.jpg" alt="Email" class="w-10 h-10 rounded shadow" />
+          <span class="text-lg">Email:</span>
+            <a href="mailto:clinton.60@buckeyemail.osu.edu" class="text-pink-700 underline">clinton.60@buckeyemail.osu.edu</a>
+        </div>
+        <div class="mb-4 flex items-center space-x-3">
+          <img src="lastpic.png" alt="LinkedIn" class="w-10 h-10 rounded shadow" />
+          <span class="text-lg">LinkedIn:</span>
+          <a href="https://www.linkedin.com/in/clintonokyere" class="text-pink-700 underline" target="_blank">linkedin.com/in/clintonokyere</a>
+        </div>
+      </div>
+    </section>
 </body>
-
-</html>
+<footer class="text-center py-4 font-bold text-lg w-full" style="background: #000; color: #ffb6d5;">
+  &copy; 2025 Clinton Okyere. All rights reserved.
+</footer>
